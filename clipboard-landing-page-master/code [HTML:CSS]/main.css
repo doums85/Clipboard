@@ -7,6 +7,7 @@
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     background: no-repeat url(images/bg-header-desktop.png);
+    background-size: contain;
 }
 
 /*GRID CONTAINER*/
