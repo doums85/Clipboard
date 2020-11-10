@@ -8,6 +8,7 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     background: no-repeat url(images/bg-header-desktop.png);
     background-size: contain;
+    overflow-x: hidden;
 }
 
 /*GRID CONTAINER*/
@@ -20,7 +21,7 @@ body {
 
 /*FONT SIZE & COLOR*/
 h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 h2,
@@ -67,7 +68,7 @@ p {
     margin-bottom: 1.5rem;
 }
 
-/*BUTTON*/
+/*BUTTON  & LINK */
 .btn-group {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -85,8 +86,16 @@ button {
     -webkit-transition-property: transform;
     transition-property: transform;
 }
+/*LINKS*/
+li a {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
 
-button:hover {
+button:hover,
+li a:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     opacity: 80%;
@@ -247,6 +256,9 @@ nav li a {
     margin: .5rem;
 }
 
+.icons-fab a {
+    color: hsl(210, 10%, 33%);
+}
 
 /*MEDIA QUIRES*/
 @media (min-width: 600px) and (max-width: 976px) {
@@ -273,7 +285,9 @@ nav li a {
         width: 60vw;
         padding: 1rem;
     }
-
+    .teaser-text{
+        width: 90vw;
+    }
     .wrapper-avantage {
         width: 90vw;
         grid-template-columns: auto;
@@ -307,7 +321,12 @@ nav li a {
         text-align: center;
         overflow-x: hidden;
     }
-
+    h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
     .header img {
         width: 20vw;
     }
@@ -316,7 +335,9 @@ nav li a {
         width: 90vw;
         margin: 0 auto;
     }
-
+    .teaser-text{
+        width: 90vw;
+    }
     .btn-group {
         height: 20vh;
         display: flex;
